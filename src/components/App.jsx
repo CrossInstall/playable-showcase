@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Header />
-      <CenterMode />
+      <Coverflow1 />
       <Footer />
     </div>
   );
