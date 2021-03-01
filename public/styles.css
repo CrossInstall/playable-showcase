@@ -1,0 +1,888 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: #eee;
+  padding: 0 16px;
+  background-color: #faefeb;
+  background-image: url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.btn-outline-dark {
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+
+.d-block {
+  /* resize: 10px; */
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  position: center;
+  /* max-height: 300px; */
+}
+
+header {
+  margin: auto -16px;
+  padding: 16px 32px;
+  text-align: center;
+}
+
+header h1 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.MenuIcon {
+  align-content: right;
+}
+
+/*Generic CSS Version 1.2 */
+
+/* html,
+body {
+  background-color: rbg(0, 0, 0);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.914rem;
+  font-weight: 400;
+  height: 100%;
+  letter-spacing: 0.5;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+} */
+
+.ng-cloak {
+  display: none;
+}
+
+a {
+  color: rgb(29, 161, 242);
+  shadow: 0 0 0.1875rem 0.4375rem rgb(54, 109, 54);
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.fake-label {
+  display: inline-block;
+  font-weight: 700;
+  max-width: 100%;
+  margin-bottom: 0.3125rem;
+}
+
+/*Index*/
+.index-button-row {
+  margin: 1.5rem;
+}
+
+#creative_table_filter {
+  margin: 0 15px 0 0;
+}
+
+.redis-badge {
+  background-color: rgb(1, 1, 1);
+  border-radius: 50%;
+  color: rgb(245, 245, 245);
+  font-size: 0.825rem;
+  padding: 0.1875rem 0.4375rem;
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+}
+
+.redis-container {
+  padding: 0 0.19rem;
+  position: relative;
+}
+.redis-header {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.redis-small-font {
+  font-size: 0.1rem;
+}
+
+.redis-table {
+  clear: both;
+  margin: 0 auto;
+  table-layout: fixed;
+}
+
+.redis-table tbody td,
+.redis-table thead th {
+  min-width: 6.25rem;
+}
+
+tr.border_bottom td {
+  border-bottom: 0.0625rem solid black;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 1rem;
+  width: 25%;
+}
+
+.logo-header {
+  padding-left: 1.85rem;
+}
+
+.logo-header a {
+  color: inherit;
+  margin-right: 0.85rem;
+  text-decoration: none;
+}
+
+.logo-header a:hover {
+  color: rgb(51, 122, 183);
+}
+
+.logo-action {
+  float: none;
+  justify-self: end;
+  margin: 0;
+  padding-right: 1rem;
+  width: auto;
+}
+
+.logo-img {
+  resize: 10px;
+  display: inline-block;
+  height: 2.2rem;
+}
+
+.logo-page {
+  justify-self: end;
+  padding-right: 1rem;
+}
+
+.logo-search {
+  margin-right: 1.85rem;
+}
+
+.campaign-link-box {
+  border: 1px solid black;
+  border-radius: 0.25em;
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  position: relative;
+}
+
+.campaign-link-list {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(155, 155, 155);
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  left: 105%;
+  margin-left: 1em;
+  position: absolute;
+  padding: 0.5em;
+  text-align: left;
+  top: -0.5em;
+  transition-delay: 1s;
+  visibility: hidden;
+  width: 50em;
+  z-index: 9999999999;
+}
+
+.campaign-link-box:hover .campaign-link-list {
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.index-build-result th,
+td {
+  padding: 0.5rem;
+}
+
+/*Generic Modal*/
+@media screen and (min-width: 768px) {
+  .big-modal {
+    width: 95%;
+  }
+}
+
+/*Modal Instruction Box*/
+.modal-instruction-box {
+  margin-bottom: 1.5rem;
+}
+
+/*Modal Message Box*/
+.modal-message-box {
+  margin: 1rem;
+}
+
+.error-highlighting {
+  background: rgb(217, 83, 79);
+}
+
+/*Add Update*/
+.add-update {
+  width: 30%;
+}
+
+#prototype_filename {
+  width: 39rem;
+}
+
+#prototype_upload {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.long-input {
+  width: 30rem;
+}
+
+.add-button {
+  margin: 1rem 0;
+}
+
+/*Build*/
+.dropdown-placeholder {
+  display: none;
+}
+
+.build-output-box {
+  height: 25rem;
+}
+
+.dynamic-param-button {
+  margin: 0.5rem 0;
+}
+
+/*Management*/
+table > tbody > tr.management-color-both {
+  background-color: rgb(49, 148, 50);
+}
+
+table > tbody > tr.management-color-prod {
+  background-color: rgb(255, 204, 51);
+}
+
+.management-message-box {
+  height: 20rem;
+  overflow: auto;
+  resize: vertical;
+  width: 90%;
+}
+
+.management-color-box {
+  border: 0.0625rem solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  height: 1rem;
+  margin: 0.3125rem;
+  width: 1rem;
+}
+
+.management-green {
+  background: rgb(49, 148, 50);
+}
+
+.management-white {
+  background: rgb(255, 255, 255);
+}
+
+.management-orange {
+  background: rgb(255, 204, 51);
+}
+
+.management-blue {
+  background: rgb(29, 161, 242);
+}
+
+.management-darkblue {
+  background: rgb(151, 227, 255);
+}
+
+/*Github*/
+.big-text-input {
+  width: 80rem;
+}
+
+.date-modified-width {
+  width: 6.6rem;
+}
+
+#datepicker_from {
+  font-size: 0.85rem;
+}
+
+.js-partnership-button {
+  cursor: pointer;
+}
+
+.js-test-button {
+  cursor: pointer;
+  margin-top: 0.4rem;
+}
+
+.partnership-black {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  margin: 0.3rem;
+  text-decoration: none;
+}
+
+.partnership-black > td > a {
+  color: inherit;
+  cursor: pointer;
+}
+
+.partnership-gray {
+  color: rgb(86, 86, 86);
+  cursor: pointer;
+  margin: 0.3rem;
+  text-decoration: none;
+}
+
+.partnership-gray > td > a {
+  color: inherit;
+  cursor: pointer;
+}
+
+.partnership-orange {
+  color: rgb(246, 123, 10);
+  cursor: pointer;
+  margin: 0.3rem;
+  text-decoration: none;
+}
+
+.partnership-landscape {
+  transform: rotate(90deg);
+}
+
+.partnership-index {
+  transform: rotate(45deg);
+}
+
+/*String*/
+.success-highlighting {
+  background: rgb(85, 244, 96);
+}
+
+.error-highlighting {
+  background: rgb(217, 83, 79);
+}
+
+#string_table {
+  border-collapse: separate;
+  border-spacing: 0.7rem 0.3rem;
+}
+
+#string_table th {
+  color: rgb(107, 109, 114);
+}
+
+.string-key {
+  width: 80rem;
+}
+
+.text-top {
+  vertical-align: text-top;
+}
+
+.comment-toggle {
+  color: rgb(51, 102, 187);
+  font-size: 8pt;
+  margin: 0.2rem 0;
+}
+
+.comment-container {
+  margin-top: 0.3rem;
+}
+
+.comment-input {
+  border-color: rgb(119, 34, 51);
+}
+
+.btn-string-add-row {
+  margin-left: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+.edit-build {
+  border: 1px solid rgb(90, 90, 90);
+  height: 4rem;
+  width: 14rem;
+}
+
+.foreign-language-box {
+  border-radius: 0.25em;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 0.2em;
+  padding: 0.15em 0.25em;
+  vertical-align: middle;
+}
+
+.translation-pending {
+  background: rgb(255, 121, 0);
+}
+
+.translation-box {
+  border: 1px solid black;
+  border-radius: 0.25em;
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  position: relative;
+}
+
+.translation-list {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(155, 155, 155);
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  left: 50%;
+  margin-left: -25em;
+  position: absolute;
+  padding: 0.2em;
+  text-align: left;
+  top: 115%;
+  transition-delay: 1s;
+  visibility: hidden;
+  width: 30em;
+  z-index: 9999999999;
+}
+
+.translation-box:hover .translation-list {
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.translation-done {
+  background: rgb(100, 200, 90);
+  display: inline-block;
+  position: relative;
+}
+
+.translation-pop {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(155, 155, 155);
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  left: 50%;
+  margin-left: -10em;
+  position: absolute;
+  padding: 0.2em;
+  text-align: left;
+  top: 115%;
+  visibility: hidden;
+  width: 20em;
+  z-index: 9999999999;
+}
+
+.translation-done:hover .translation-pop {
+  visibility: visible;
+}
+
+.translate-label {
+  display: inline-block;
+  padding-right: 0.7em;
+  white-space: nowrap;
+}
+
+.translate-checkbox {
+  height: 0.8em;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -0.1em;
+  vertical-align: bottom;
+  width: 0.8em;
+  *overflow: hidden;
+}
+
+.string-translate-language-list,
+.string-translate-selectors {
+  margin-top: 1em;
+  margin-left: 0.7rem;
+}
+
+.creative-search {
+  margin-top: 0.375rem;
+}
+
+#creative_cancel {
+  bottom: 0rem;
+  cursor: pointer;
+  display: none;
+  height: 0.875rem;
+  margin: auto;
+  position: absolute;
+  right: 0.312rem;
+  top: 0.55rem;
+}
+
+.build-log {
+  padding-right: 3rem;
+}
+
+.build-caas {
+  margin-right: 0.3rem;
+}
+
+.glyphicon {
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.spacer > .glyphicon {
+  margin: 0.5rem;
+}
+
+.text-size {
+  color: rgb(150, 150, 150);
+}
+
+.transparent {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.clr {
+  clear: both;
+}
+
+.preview-header {
+  border-bottom: 1px solid;
+  margin-top: 0px;
+  padding: 1vw;
+}
+
+.logo-image {
+  float: left;
+  resize: 20;
+}
+
+.iphone-btn,
+.ipad-btn,
+.android-btn,
+.rotate-btn {
+  float: right;
+  font-size: 11px;
+  margin: 4px 4px 0 4px;
+}
+
+.iphone-btn:hover,
+.ipad-btn:hover,
+.android-btn:hover,
+.rotate-btn:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.toggle-btn {
+  float: right;
+  margin: 19px 15px 0 0;
+}
+
+.view {
+  height: 200px;
+  left: 33%;
+  position: absolute;
+  width: 350px;
+}
+
+.four-oh-four {
+  background-image: url("/img/404.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.iphone-portrait {
+  background-image: url("/img/iPhone.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 900px;
+  position: relative;
+  top: -60px;
+  width: 550px;
+  z-index: 100;
+}
+
+.iphone-landscape {
+  background-image: url("/img/iPhone_landscape.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 550px;
+  position: relative;
+  width: 901px;
+  z-index: 100;
+}
+
+.android-portrait {
+  background-image: url("/img/android.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 880px;
+  position: relative;
+  width: 567px;
+  top: -60px;
+  z-index: 100;
+}
+
+.android-landscape {
+  background-image: url("/img/android_landscape.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 567px;
+  position: relative;
+  width: 880px;
+  z-index: 100;
+}
+
+.ipad-portrait {
+  background-image: url("/img/ipad.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 750px;
+  position: relative;
+  width: 2000px;
+  z-index: 100;
+}
+
+.ipad-landscape {
+  background-image: url("/img/ipad_landscape.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2000px;
+  position: relative;
+  width: 750px;
+  z-index: 100;
+}
+
+.advertiser-preview-iframe {
+  border: none;
+}
+
+.portrait {
+  height: 667px;
+  left: 86px;
+  position: absolute;
+  top: 116px;
+  width: 376px;
+}
+
+.android-portrait .portrait {
+  border-radius: 18px;
+  height: 740px;
+  left: 27px;
+  top: 70px;
+  width: 366px;
+}
+
+.ipad-size-portrait {
+  height: 540px;
+  left: 62px;
+  position: absolute;
+  top: 108px;
+  width: 405px;
+}
+
+.landscape {
+  height: 376px;
+  left: 123px;
+  position: absolute;
+  top: 93px;
+  width: 667px;
+}
+
+.android-landscape .landscape {
+  border-radius: 18px;
+  height: 366px;
+  left: 69px;
+  top: 100px;
+  width: 740px;
+}
+
+.ipad-size-landscape {
+  height: 405px;
+  left: 104px;
+  position: absolute;
+  top: 64px;
+  width: 540px;
+}
+
+a[class$="hint"] {
+  color: rgb(0, 0, 0);
+  display: inline;
+  text-decoration: none;
+}
+
+a[class$="hint"] .glyphicon {
+  font-size: 0.9em;
+}
+
+a.partnership-hint {
+  color: rgb(86, 86, 86);
+}
+
+#build_dynamic_parameters {
+  padding-left: 3rem;
+}
+
+#build_description {
+  padding-bottom: 1rem;
+}
+
+#all_param_string {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 75%;
+}
+
+.build-hash {
+  width: 32%;
+}
+
+.show-logs {
+  clear: both;
+  float: right;
+}
+
+.test-creative {
+  clear: both;
+  padding: 1rem;
+}
+
+#header_options th {
+  border-bottom: 0;
+}
+
+.truncate {
+  max-width: 22.75rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dataTables_scroll {
+  overflow: auto;
+}
+
+@media only screen and (max-height: 800px), (max-width: 1100px) {
+  .iphone-portrait {
+    background-image: url("/img/iPhone.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    position: relative;
+    top: 20px;
+    width: 367px;
+    z-index: 100;
+  }
+
+  .iphone-landscape {
+    background-image: url("/img/iPhone_landscape.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 367px;
+    position: relative;
+    width: 600px;
+    z-index: 100;
+  }
+
+  .android-portrait {
+    background-image: url("/img/android.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 660px;
+    position: relative;
+    top: 20px;
+    width: 425px;
+    z-index: 100;
+  }
+
+  .android-portrait .portrait {
+    border-radius: 14px;
+    height: 554px;
+    left: 20px;
+    top: 53px;
+    width: 274px;
+  }
+
+  .portrait {
+    height: 446px;
+    left: 58px;
+    position: absolute;
+    top: 78px;
+    width: 250px;
+  }
+
+  .android-landscape {
+    background-image: url("/img/android_landscape.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 425px;
+    position: relative;
+    width: 660px;
+    z-index: 100;
+  }
+
+  .android-landscape .landscape {
+    border-radius: 14px;
+    height: 274px;
+    left: 53px;
+    top: 76px;
+    width: 554px;
+  }
+
+  .landscape {
+    height: 250px;
+    left: 82px;
+    position: absolute;
+    top: 63px;
+    width: 444px;
+  }
+
+  .js-admin-button {
+    margin-left: 50px;
+  }
+}
+
+#upload_filename {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
