@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import Preview from "./Preview";
+// import Preview from "./Preview";
 import MyCarousel from "./Carousel";
 
 function App() {

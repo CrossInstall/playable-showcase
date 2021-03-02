@@ -1,20 +1,19 @@
 import React from "react";
-import MyCarousel from "./Carousel";
 
 function viewPreview() {
   return (
-    // <div className="clr">
-    //   <div className="view">
-    //     <div className="advertiser-preview-container iphone-portrait">
-    <MyCarousel />
-    //       <iframe
-    //         id="advertiser-preview-iframe"
-    //         className="advertiser-preview-iframe portrait"
-    //         scrolling="no"
-    //       ></iframe>
-    //     </div>
-    //   </div>
-    // </div>
+    <div className="clr">
+      <div className="view">
+        <div className="advertiser-preview-container iphone-portrait">
+          <iframe
+            title="Test"
+            id="advertiser-preview-iframe"
+            className="advertiser-preview-iframe portrait"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </div>
+    </div>
   );
 }
 

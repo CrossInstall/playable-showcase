@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { useDetectOutsideClick } from "./useDetectOutsideClick";
 import MenuIcon from "@material-ui/icons/Menu";
 
@@ -21,13 +21,13 @@ export default function DropDown() {
         >
           <ul>
             <li>
-              <a href="#">Idle</a>
+              <a href="/Idle">Idle</a>
             </li>
             <li>
-              <a href="#">RPG</a>
+              <a href="/RPG">RPG</a>
             </li>
             <li>
-              <a href="#">Match3</a>
+              <a href="/Match3">Match3</a>
             </li>
           </ul>
         </nav>
