@@ -1,9 +1,9 @@
 import React from "react";
-import MenuIcon from "@material-ui/icons/Menu";
+import DropDown from "./DropDown";
 
 function Header() {
   return (
-    <div className="preview-header">
+    <div>
       <header>
         <h1>
           <div
@@ -24,27 +24,12 @@ function Header() {
               </a>
             </div>
           </div>
-          Playable Showcase{"     "}
-          <button type="button" className="btn btn-outline-dark">
-            <MenuIcon />
-          </button>
+          Playable Showcase
         </h1>
       </header>
-
-      <div>
-        <button type="button" className="btn rotate-btn">
-          Rotate
-        </button>
-        <button type="button" className="btn android-btn">
-          Android
-        </button>
-        <button type="button" className="btn ipad-btn">
-          iPad
-        </button>
-        <button type="button" className="btn iphone-btn">
-          iPhone
-        </button>
-      </div>
+      <React.StrictMode>
+        <DropDown />
+      </React.StrictMode>
     </div>
   );
 }
