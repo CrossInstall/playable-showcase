@@ -1,13 +1,12 @@
 import React from "react";
 import MyCarousel from "./Carousel";
-import Coverflow1 from "./newCarousel";
 
 function viewPreview() {
   return (
     // <div className="clr">
     //   <div className="view">
     //     <div className="advertiser-preview-container iphone-portrait">
-    <Coverflow1 />
+    <MyCarousel />
     //       <iframe
     //         id="advertiser-preview-iframe"
     //         className="advertiser-preview-iframe portrait"

@@ -14,7 +14,12 @@ function Header() {
             <div className="logo-image">
               <a href="/" data-ajax-loader="ajax-loader-binded">
                 <h3 className="logo-header">
-                  <img className="logo-img" src="/img/crossinstall-logo.png" />
+                  <img
+                    src="https://static1.squarespace.com/static/59b7837dd7bdce8efdb14838/t/5eba90cdad2c4f3dd50498dd/1604083380323/"
+                    // width="50"
+                    height="50"
+                    alt="logo"
+                  />
                 </h3>
               </a>
             </div>

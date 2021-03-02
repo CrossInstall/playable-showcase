@@ -8,7 +8,7 @@ function MyCarousel() {
         <Carousel.Item interval={1000}>
           <img
             className="d-block w-100"
-            src="/img/iPhone.png"
+            src="https://i.pinimg.com/originals/15/d4/90/15d4903ffd54f3ad76007ffae8722fc5.png"
             alt="First slide"
           />
           {/* <Carousel.Caption>
@@ -19,7 +19,7 @@ function MyCarousel() {
         <Carousel.Item interval={500}>
           <img
             className="d-block w-100"
-            src="/img/iPhone.png"
+            src="https://i.pinimg.com/originals/15/d4/90/15d4903ffd54f3ad76007ffae8722fc5.png"
             alt="Second slide"
           />
           {/* <Carousel.Caption>
@@ -30,7 +30,7 @@ function MyCarousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="/img/iPhone.png"
+            src="https://i.pinimg.com/originals/15/d4/90/15d4903ffd54f3ad76007ffae8722fc5.png"
             alt="Third slide"
           />
           {/* <Carousel.Caption>
